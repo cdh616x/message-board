@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  header
+    .button-container
+      a(href=`http://localhost:${process.env.PORT || 3000}/`): button.compose= "Back to Message Board"
+    h1= 'Construct New Message'
+    p= 'speak your mind freely'
+  main
+    h2= "New Message"
+    form(method="POST" action="/new")
+      p
+        | Title:
+        input(type="text", name="title")
+      p
+        | Message:
+        input(type="text", name="message")
+      input(type="submit", value="Submit")
