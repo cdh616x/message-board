@@ -4,10 +4,10 @@ block content
   header
     h1= 'Message Board'
     p= 'speak your mind freely'
-    hr
   main
     .button-container
       a(href=`https://hidden-reef-92811.herokuapp.com/new`): button.compose= "got something to say?"
+      hr
     each message in messages
       section.message-card
         h2= message.title
