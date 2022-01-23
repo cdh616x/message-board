@@ -9,7 +9,7 @@ block content
       hr
     each message in messages
       section.message-card
-        h2= message.title
+        h2= "Title:" + message.title
         h3= message.message
         footer
           p.username= message.user
