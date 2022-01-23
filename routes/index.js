@@ -21,7 +21,7 @@ router.post("/new", function(req, res, next) {
     date: new Date()
   };
   console.log(newMessage);
-  messages.push({title: req.body.title, user: req.body.user, message:req.body.input, date: new Date()});
+  messages.push({title: req.body.title, user: req.body.user, message:req.body.input, date: new Date().getHours()});
   res.redirect("/");
 });
 
