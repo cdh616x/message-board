@@ -1,6 +1,6 @@
 {
   "name": "message-board",
-  "homepage": "https://hidden-reef-92811.herokuapp.com/"
+  "homepage": "https://hidden-reef-92811.herokuapp.com/",
   "version": "0.0.0",
   "private": true,
   "scripts": {

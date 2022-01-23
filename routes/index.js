@@ -9,11 +9,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Mini Messageboard', messages:messages });
 });
 
-router.get(__dirname + "/new", function(req, res, next) {
+router.get("/new", function(req, res, next) {
   res.render("form", { title: "Mini Messageboard", messages:messages });
 });
 
-router.post(__dirname + "/new", function(req, res, next) {
+router.post("/new", function(req, res, next) {
   const newMessage = {
     title: req.body.title,
     message: req.body.message,
