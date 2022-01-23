@@ -25,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/cdh616x/message-board/issues"
   },
-  "homepage": "https://github.com/cdh616x/message-board#readme"
+  "homepage": "https://github.com/cdh616x/message-board#readme",
+  "engines": { "node": "16.13.0"}
 }
