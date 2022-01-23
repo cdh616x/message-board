@@ -10,7 +10,8 @@ block content
       a(href=`https://hidden-reef-92811.herokuapp.com/new`): button.compose= "got something to say?"
     each message in messages
       section.message-card
-        h2= message.text
+        h2= message.title
+        h3= message.message
         footer
           p.username= message.user
-          p.date= message.added
+          p.date= message.date

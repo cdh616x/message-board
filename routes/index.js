@@ -16,7 +16,8 @@ router.get("/new", function(req, res, next) {
 router.post("/new", function(req, res, next) {
   const newMessage = {
     title: req.body.title,
-    message: req.body.message,
+    user: req.body.user,
+    message: req.body.input,
     date: new Date()
   };
   console.log(newMessage);
